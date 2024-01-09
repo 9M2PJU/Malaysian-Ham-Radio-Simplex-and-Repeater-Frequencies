@@ -1,6 +1,7 @@
 # MalaysianHamRadioFrequencies
 
-![image](https://github.com/9M2PJU/Malaysian-Ham-Radio-Simplex-and-Repeater-Frequencies/assets/991353/fe8128c5-265a-4e64-b3fb-fb0fe9bd3d22)
+<img width="1136" alt="Screenshot 2024-01-09 at 11 53 17 PM" src="https://github.com/9M2PJU/Malaysian-Ham-Radio-Simplex-and-Repeater-Frequencies/assets/991353/3dfc1b30-5877-40cc-9d13-e2e038d3a0e0">
+
 
 List of Simplex and Repeater amateur radio frequencies used in Malaysia (including UHF Family Radio Service)
 
