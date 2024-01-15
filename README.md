@@ -1,10 +1,10 @@
-# MalaysianHamRadioFrequencies
+# Malaysian Ham Radio Frequencies CSV by 9M2PJU
 
 <img width="1136" alt="Screenshot 2024-01-09 at 11 53 17 PM" src="https://github.com/9M2PJU/Malaysian-Ham-Radio-Simplex-and-Repeater-Frequencies/assets/991353/3dfc1b30-5877-40cc-9d13-e2e038d3a0e0">
 
 
-List of Simplex and Repeater amateur radio frequencies used in Malaysia (including UHF Family Radio Service)
+Array of Simplex and Repeater amateur radio frequencies utilized in Malaysia, inclusive of the UHF Family Radio Service.
 
-Just upload to your VHF radios using CHIRP - https://chirp.danplanet.com/projects/chirp/wiki/Home
+To upload these frequencies to your VHF radios, you can utilize CHIRP, a versatile radio programming software.
 
-For latest repeater frequencies please check out https://www.repeaterbook.com/row_repeaters/index.php?state_id=MY maintained by Hamid 9M2TPT
+For the most recent updates on repeater frequencies, kindly visit the website maintained by Hamid 9M2TPT. It provides a comprehensive list of repeaters in Malaysia."
