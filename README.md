@@ -6,5 +6,3 @@
 Array of Simplex and Repeater amateur radio frequencies utilized in Malaysia, inclusive of the UHF Family Radio Service.
 
 To upload these frequencies to your VHF radios, you can utilize CHIRP, a versatile radio programming software.
-
-For the most recent updates on repeater frequencies, kindly visit the website maintained by Hamid 9M2TPT. It provides a comprehensive list of repeaters in Malaysia."
