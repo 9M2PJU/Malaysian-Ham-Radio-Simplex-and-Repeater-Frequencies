@@ -60,6 +60,4 @@ Feel free to share this guide with other radio enthusiasts and enjoy your commun
 
 If you find any errors or have suggestions for additional frequencies, feel free to contribute by opening an issue or submitting a pull request.
 
-## License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
