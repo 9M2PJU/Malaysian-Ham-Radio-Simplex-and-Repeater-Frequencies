@@ -206,7 +206,7 @@ This project is open source and available under the [WTFPL (Do What The F*ck You
 </a>
 
 </div>
----
+
 
 ## 🏆 **Acknowledgments**
 
