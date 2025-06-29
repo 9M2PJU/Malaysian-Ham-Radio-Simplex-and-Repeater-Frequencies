@@ -205,13 +205,6 @@ This project is open source and available under the [WTFPL (Do What The F*ck You
   <img src="https://contrib.rocks/image?repo=9M2PJU/Malaysian-Ham-Radio-Simplex-and-Repeater-Frequencies" />
 </a>
 
-  </tbody>
-</table>
-
-### 🏷️ **Contribution Types**
-💻 Code | 📖 Documentation | 🎨 Design | 🚇 Infrastructure | 🐛 Bug Reports | 💡 Ideas | 🔍 Testing | ❓ Answering Questions
-
-</div>
 
 ---
 
