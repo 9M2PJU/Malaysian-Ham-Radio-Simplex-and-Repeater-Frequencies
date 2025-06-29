@@ -193,6 +193,46 @@ This project is open source and available under the [WTFPL (Do What The F*ck You
 
 ---
 
+## 👥 **Contributors**
+
+<div align="center">
+
+### 🌟 **Hall of Fame**
+*Thank you to everyone who has contributed to making this project better!*
+
+<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
+[![All Contributors](https://img.shields.io/github/all-contributors/9M2PJU/Malaysian-Ham-Radio-Simplex-and-Repeater-Frequencies?color=ee8449&style=for-the-badge)](#contributors)
+
+<!-- Method 1: GitHub Contributors Widget (Auto-updating) -->
+<a href="https://github.com/9M2PJU/Malaysian-Ham-Radio-Simplex-and-Repeater-Frequencies/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=9M2PJU/Malaysian-Ham-Radio-Simplex-and-Repeater-Frequencies" />
+</a>
+
+<!-- Method 2: All Contributors Table (Manual but more detailed) -->
+<table>
+  <tbody>
+    <tr>
+      <td align="center" valign="top" width="14.28%">
+        <a href="https://github.com/9M2PJU">
+          <img src="https://avatars.githubusercontent.com/u/991353?v=4" width="100px;" alt="9M2PJU"/>
+          <br />
+          <sub><b>9M2PJU</b></sub>
+        </a>
+        <br />
+        <sub>💻 📖 🎨 🚇</sub>
+      </td>
+      <!-- Add more contributors here as they contribute -->
+    </tr>
+  </tbody>
+</table>
+
+### 🏷️ **Contribution Types**
+💻 Code | 📖 Documentation | 🎨 Design | 🚇 Infrastructure | 🐛 Bug Reports | 💡 Ideas | 🔍 Testing | ❓ Answering Questions
+
+</div>
+
+---
+
 ## 🏆 **Acknowledgments**
 
 Special thanks to:
