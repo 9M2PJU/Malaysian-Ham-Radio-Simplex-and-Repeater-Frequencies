@@ -208,20 +208,7 @@ This project is open source and available under the [WTFPL (Do What The F*ck You
   <img src="https://contrib.rocks/image?repo=9M2PJU/Malaysian-Ham-Radio-Simplex-and-Repeater-Frequencies" />
 </a>
 
-<!-- Method 2: All Contributors Table (Manual but more detailed) -->
-<table>
-  <tbody>
-    <tr>
-      <td align="center" valign="top" width="14.28%">
-        <a href="https://github.com/9M2PJU">
-          <img src="https://avatars.githubusercontent.com/u/991353?v=4" width="100px;" alt="9M2PJU"/>
-          <br />
-          <sub><b>9M2PJU</b></sub>
-        </a>
-        <br />
-        <sub>💻 📖 🎨 🚇</sub>
-      </td>
-      <!-- Add more contributors here as they contribute -->
+
     </tr>
   </tbody>
 </table>
