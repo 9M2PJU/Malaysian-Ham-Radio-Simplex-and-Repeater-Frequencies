@@ -208,8 +208,6 @@ This project is open source and available under the [WTFPL (Do What The F*ck You
   <img src="https://contrib.rocks/image?repo=9M2PJU/Malaysian-Ham-Radio-Simplex-and-Repeater-Frequencies" />
 </a>
 
-
-    </tr>
   </tbody>
 </table>
 
@@ -224,7 +222,6 @@ This project is open source and available under the [WTFPL (Do What The F*ck You
 
 Special thanks to:
 - 🇲🇾 Malaysian Communications and Multimedia Commission (MCMC)
-- 📻 Malaysian Amateur Radio Transmitters Society (MARTS)
 - 🤝 The global amateur radio community
 - 💻 CHIRP development team
 
