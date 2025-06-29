@@ -200,9 +200,6 @@ This project is open source and available under the [WTFPL (Do What The F*ck You
 ### 🌟 **Hall of Fame**
 *Thank you to everyone who has contributed to making this project better!*
 
-<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/github/all-contributors/9M2PJU/Malaysian-Ham-Radio-Simplex-and-Repeater-Frequencies?color=ee8449&style=for-the-badge)](#contributors)
-
 <!-- Method 1: GitHub Contributors Widget (Auto-updating) -->
 <a href="https://github.com/9M2PJU/Malaysian-Ham-Radio-Simplex-and-Repeater-Frequencies/graphs/contributors">
   <img src="https://contrib.rocks/image?repo=9M2PJU/Malaysian-Ham-Radio-Simplex-and-Repeater-Frequencies" />
