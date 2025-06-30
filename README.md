@@ -25,23 +25,6 @@ Welcome to the most comprehensive collection of Malaysian amateur radio frequenc
 
 ---
 
-## 📈 **GitHub Analytics**
-
-<div align="center">
-
-### 📊 **Repository Stats**
-![GitHub Stats](https://github-readme-stats.vercel.app/api?username=9M2PJU&theme=tokyonight&hide_border=true&include_all_commits=true&count_private=false&show_icons=true&bg_color=0D1117&title_color=58A6FF&text_color=C9D1D9&icon_color=79C0FF)
-
-### 🔥 **Contribution Streak**
-![GitHub Streak](https://streak-stats.demolab.com?user=9M2PJU&theme=tokyonight&hide_border=true&background=0D1117&stroke=30363D&ring=58A6FF&fire=FF6B6B&currStreakLabel=C9D1D9)
-
-### 💻 **Technology Stack**
-![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=9M2PJU&theme=tokyonight&hide_border=true&include_all_commits=true&count_private=false&layout=compact&bg_color=0D1117&title_color=58A6FF&text_color=C9D1D9)
-
-</div>
-
----
-
 ## 🚀 **Quick Start Guide**
 
 ### 📋 **Prerequisites**
