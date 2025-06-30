@@ -155,17 +155,6 @@ If this project has been helpful to you, consider supporting its development:
 
 ---
 
-## 📞 **Connect With Us**
-
-<div align="center">
-
-[![GitHub](https://img.shields.io/badge/GitHub-9M2PJU-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/9M2PJU)
-[![Ham Radio](https://img.shields.io/badge/Call%20Sign-9M2PJU-red?style=for-the-badge&logo=radio&logoColor=white)](#)
-
-</div>
-
----
-
 ## 📄 **License & Legal**
 
 This project is open source and available under the [WTFPL (Do What The F*ck You Want To Public License)](http://www.wtfpl.net/). 
