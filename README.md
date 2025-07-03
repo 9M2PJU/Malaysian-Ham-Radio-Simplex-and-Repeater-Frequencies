@@ -170,7 +170,7 @@ This project is open source and available under the [WTFPL (Do What The F*ck You
 <div align="center">
 
 ### 🌟 **Hall of Fame**
-*Thank you to everyone who has contributed to making this project better!*
+*Thank you 9M2EDU and to everyone who has contributed to making this project better!*
 
 <!-- Method 1: GitHub Contributors Widget (Auto-updating) -->
 <a href="https://github.com/9M2PJU/Malaysian-Ham-Radio-Simplex-and-Repeater-Frequencies/graphs/contributors">
