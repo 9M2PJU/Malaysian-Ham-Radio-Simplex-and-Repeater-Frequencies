@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Malaysian Ham Radio Frequencies</title>
+  <script src="https://cdn.jsdelivr.net/npm/papaparse@5.4.1/papaparse.min.js"></script>
+  <style>
+    body { font-family: sans-serif; margin: 2rem; }
+    h1 { text-align: center; }
+    table { border-collapse: collapse; width: 100%; margin-top: 1rem; }
+    th, td { border: 1px solid #ccc; padding: 0.5rem; text-align: left; font-size: 0.9rem; }
+    th { background: #eee; }
+    .state-section { margin-top: 2rem; }
+  </style>
+</head>
+<body>
+  <h1>🇲🇾 Malaysian Ham Radio Frequencies</h1>
+  <div id="output"></div>
+
+  <script>
+    Papa.parse('9M2PJU.csv', {
+      download: true,
+      header: true,
+      complete: function(results) {
+        const grouped = {};
+        results.data.forEach(row => {
+          const state = row.State || 'UNKNOWN';
+          if (!grouped[state]) grouped[state] = [];
+          grouped[state].push(row);
+        });
+
+        const output = document.getElementById('output');
+        Object.entries(grouped).forEach(([state, rows]) => {
+          const section = document.createElement('div');
+          section.className = 'state-section';
+
+          const title = document.createElement('h2');
+          title.textContent = state;
+          section.appendChild(title);
+
+          const table = document.createElement('table');
+          const thead = document.createElement('thead');
+          thead.innerHTML = '<tr><th>Freq</th><th>Shift</th><th>Tone</th><th>Location</th><th>Notes</th></tr>';
+          table.appendChild(thead);
+
+          const tbody = document.createElement('tbody');
+          rows.forEach(row => {
+            const tr = document.createElement('tr');
+            tr.innerHTML = `
+              <td>${row.Freq}</td>
+              <td>${row.Shift}</td>
+              <td>${row.Tone}</td>
+              <td>${row.Location}</td>
+              <td>${row.Notes}</td>
+            `;
+            tbody.appendChild(tr);
+          });
+
+          table.appendChild(tbody);
+          section.appendChild(table);
+          output.appendChild(section);
+        });
+      }
+    });
+  </script>
+</body>
+</html>
