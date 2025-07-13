@@ -24,6 +24,26 @@ Welcome to the most comprehensive collection of Malaysian amateur radio frequenc
 - 🔧 **Regularly Updated** - Community-driven maintenance
 
 ---
+## 🌐 Live Web Viewer
+
+📡 **Now Available Online!**  
+You can now **browse all Malaysian ham radio frequencies** — simplex, repeaters, and PMR — through a **modern, mobile-friendly** web interface.
+
+> **🔗 URL:** [https://frequency.hamradio.my](https://frequency.hamradio.my)
+
+### ✨ Features:
+- 📁 Auto-loaded from the latest [`9M2PJU.csv`](https://github.com/9M2PJU/Malaysian-Ham-Radio-Simplex-and-Repeater-Frequencies/blob/main/9M2PJU.csv)
+- 📱 Fully responsive layout for desktop, tablet, and mobile
+- 🌓 Built-in **dark mode**
+- 📌 Grouped by:
+  - ✅ **Simplex Frequencies**
+  - ✅ **Repeaters**
+  - ✅ **PMR 446 MHz**
+- 🎨 Color-coded by band (VHF/UHF)
+- 🖨️ Print-friendly layout
+- 🇲🇾 Localized with full Malaysian state names
+- ⚡ Fast loading via GitHub Pages (no backend needed!)
+
 
 ## 🚀 **Quick Start Guide**
 
