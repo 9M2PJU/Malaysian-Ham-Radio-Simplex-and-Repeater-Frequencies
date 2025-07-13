@@ -36,11 +36,6 @@
   </footer>
 
   <script>
-    const STATE_NAMES = {
-      KL:'Kuala Lumpur', PHG:'Pahang', N9:'Negeri Sembilan', PENANG:'Pulau Pinang',
-      MLK:'Melaka', JHR:'Johor', KDH:'Kedah', PRK:'Perak', TGN:'Terengganu',
-      KLT:'Kelantan', SBH:'Sabah', SRK:'Sarawak'
-    };
     const output = document.getElementById('output');
     const searchInput = document.getElementById('search');
     let allRows = [];
@@ -58,26 +53,14 @@
       return `<span class="px-2 py-0.5 text-xs bg-purple-200 text-purple-800 rounded">UHF</span>`;
     }
 
-    function toggle(btn, panel){
-      btn.onclick = () => {
-        panel.classList.toggle('hidden');
-        btn.textContent = panel.classList.contains('hidden') ? '+' : '–';
-      };
-    }
-
-    function createStateSection(state, rows){
-      const sec = document.createElement('section');
-      sec.className = "bg-gray-50 dark:bg-gray-800 rounded-md mb-6 p-4 shadow";
-      const header = document.createElement('div');
-      header.className = "flex justify-between items-center cursor-pointer";
-      const title = document.createElement('h3');
-      title.className = "text-lg font-semibold";
-      title.textContent = STATE_NAMES[state] || state;
-      const btn = document.createElement('button');
-      btn.textContent = '–'; btn.className='px-2';
-      header.append(title, btn);
+    function renderGroup(title, rows) {
+      const section = document.createElement('section');
+      section.className = "mb-8";
+      const header = document.createElement('h2');
+      header.className = "text-xl font-bold mt-8 mb-3 border-b pb-1";
+      header.textContent = title;
       const table = document.createElement('table');
-      table.className = "w-full text-sm mt-2";
+      table.className = "w-full text-sm";
       table.innerHTML = `
         <thead class="border-b">
           <tr class="text-left">
@@ -94,33 +77,23 @@
             <td>${r.Mode}</td>
             <td class="hidden sm:table-cell">${r.Comment}</td>
           </tr>`).join('')}</tbody>`;
-      sec.append(header, table);
-      toggle(btn, table);
-      return sec;
+      section.append(header, table);
+      return section;
     }
 
     function render(rows){
       output.innerHTML = '';
-      const groups = { Simplex: {}, Repeaters: {}, PMR: {} };
-      let state='UNKNOWN';
+      const groups = { Simplex: [], Repeaters: [], PMR: [] };
       rows.forEach(r=>{
-        const loc = (r.Location||'').trim().toUpperCase();
-        if(STATE_NAMES[loc] || /^[A-Z]{2,6}$/.test(loc)){ state=loc; return; }
         const f=parseFloat(r.Frequency)||0, o=parseFloat(r.Offset)||0;
         let cat = o===0 && !(f>=446&&f<=446.2) ? 'Simplex' : (f>=446&&f<=446.2 ? 'PMR':'Repeaters');
-        groups[cat][state] = groups[cat][state]||[];
-        groups[cat][state].push(r);
+        groups[cat].push(r);
       });
-      ['Simplex','Repeaters','PMR'].forEach(cat=>{
-        const header = document.createElement('h2');
-        header.className = "text-xl font-bold mt-8 mb-3 border-b pb-1";
-        header.textContent = cat + (cat==='PMR'?' (446 MHz)':'');
-        output.appendChild(header);
-        for(const st in groups[cat]){
-          if(groups[cat][st].length)
-            output.appendChild(createStateSection(st, groups[cat][st]));
-        }
-      });
+
+      output.appendChild(renderGroup('Simplex Frequencies', groups.Simplex));
+      output.appendChild(renderGroup('Repeater Frequencies', groups.Repeaters));
+      output.appendChild(renderGroup('PMR Frequencies (446 MHz)', groups.PMR));
+
       if(rows.length===0) output.innerHTML='<p class="text-center">No entries found.</p>';
     }
 
@@ -135,5 +108,6 @@
     }});
   </script>
 
+  <script defer src="https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015" integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ==" data-cf-beacon='{"token":"19412d49b9894c10b28c330e60512f51"}' crossorigin="anonymous"></script>
 </body>
 </html>
