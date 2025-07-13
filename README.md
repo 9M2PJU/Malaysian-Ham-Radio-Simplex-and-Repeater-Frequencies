@@ -31,9 +31,6 @@ You can now **browse all Malaysian ham radio frequencies** — simplex, repeater
 
 > **🔗 URL:** [https://frequency.hamradio.my](https://frequency.hamradio.my)
 
-### ✨ Features:
-- 📁 Auto-loaded from the latest [`9M2PJU.csv`](https://github.com/9M2PJU/Malaysian-Ham-Radio-Simplex-and-Repeater-Frequencies/blob/main/9M2PJU.csv)
-
 ## 🚀 **Quick Start Guide**
 
 ### 📋 **Prerequisites**
