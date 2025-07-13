@@ -4,131 +4,164 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Malaysian Ham Radio Frequencies</title>
+
+  <!-- ✅ SEO Meta Tags -->
+  <meta name="description" content="Comprehensive database of Malaysian amateur radio simplex, repeater, and PMR frequencies. CHIRP compatible and updated regularly.">
+  <meta name="keywords" content="Malaysia, ham radio, amateur radio, PMR, simplex, repeater, frequencies, VHF, UHF, CHIRP, 9M2PJU, hamradio.my">
+  <meta name="author" content="9M2PJU">
+
+  <!-- ✅ Open Graph -->
+  <meta property="og:title" content="Malaysian Ham Radio Frequencies">
+  <meta property="og:description" content="Comprehensive CHIRP-compatible list of Malaysian simplex, repeater, and PMR radio frequencies.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://frequency.hamradio.my/">
+  <meta property="og:image" content="https://pass.hamradio.my/favicon.ico">
+
+  <!-- ✅ Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Malaysian Ham Radio Frequencies">
+  <meta name="twitter:description" content="Easily program your radio with CHIRP using this updated list of Malaysian simplex, repeater, and PMR frequencies.">
+  <meta name="twitter:image" content="https://pass.hamradio.my/favicon.ico">
+
   <link rel="icon" href="https://pass.hamradio.my/favicon.ico" type="image/x-icon" />
   <script src="https://cdn.jsdelivr.net/npm/papaparse@5.4.1/papaparse.min.js"></script>
   <script src="https://cdn.tailwindcss.com"></script>
   <style>
     @media print {
-      header, footer, input, button { display: none !important; }
+      header, footer, input, button, .clickable { display: none !important; }
       table { page-break-after: always; }
       body { background: white !important; color: black !important; }
     }
+    #photo { display: none; margin-top: 1em; }
+    .clickable { text-decoration: underline; cursor: pointer; color: #3b82f6; }
   </style>
 </head>
 <body class="bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100">
 
   <header class="bg-gray-100 dark:bg-gray-800 p-4 shadow print:hidden">
-    <div class="max-w-4xl mx-auto">
+    <div class="max-w-4xl mx-auto flex justify-between items-center">
       <h1 class="text-2xl font-bold">🇲🇾 Malaysian Ham Radio Frequencies</h1>
-      <input id="search" type="text" placeholder="🔍 Search..." class="w-full mt-3 px-4 py-2 border rounded dark:bg-gray-700 dark:border-gray-600" />
+    </div>
+    <div class="max-w-4xl mx-auto mt-3 print:hidden">
+      <input id="search" type="text" placeholder="🔍 Search..." class="w-full px-4 py-2 border rounded dark:bg-gray-700 dark:border-gray-600"/>
     </div>
   </header>
 
-  <main id="output" class="max-w-4xl mx-auto p-4">
+  <main class="max-w-4xl mx-auto p-4" id="output">
+    <section class="mb-6">
+      <h2 class="text-xl font-bold mb-2">📡 Malaysian Ham Radio Frequencies Collection</h2>
+      <p class="text-gray-700 dark:text-gray-300">A comprehensive frequency database for Malaysian amateur radio operators and PMR users</p>
+      <ul class="list-disc ml-6 mt-3 text-sm text-gray-600 dark:text-gray-400">
+        <li>🔄 <strong>CHIRP Ready</strong> - Direct import compatibility</li>
+        <li>📊 <strong>Comprehensive Coverage</strong> - Amateur radio + PMR frequencies</li>
+        <li>🇲🇾 <strong>Malaysia Focused</strong> - Locally relevant frequency allocations</li>
+        <li>🎨 <strong>Easy Integration</strong> - One-click radio programming</li>
+        <li>🔧 <strong>Regularly Updated</strong> - Community-driven maintenance</li>
+      </ul>
+      <p class="mt-4">
+        🌐 View or contribute on GitHub: 
+        <a href="https://github.com/9M2PJU/Malaysian-Ham-Radio-Simplex-and-Repeater-Frequencies" class="underline text-blue-600 dark:text-blue-400" target="_blank">
+          9M2PJU/Malaysian-Ham-Radio-Simplex-and-Repeater-Frequencies
+        </a>
+      </p>
+    </section>
     <p class="text-center text-gray-500 dark:text-gray-400">Loading data...</p>
   </main>
 
   <footer class="text-center text-sm text-gray-600 dark:text-gray-400 mt-8 mb-4 print:hidden">
-    Made for 🇲🇾 by <a href="https://hamradio.my" class="underline">9M2PJU</a><br><br>
-    <p>If you want to support this community project, click 
-      <span class="cursor-pointer underline text-blue-500 hover:text-blue-700" onclick="togglePhoto()">here</span>
-    </p>
-    <img id="photo" class="mx-auto mt-2 hidden" src="https://drive.google.com/thumbnail?id=1lf1zgIN1Kx5cduZM79n3boGDJQ68uSJ_&sz=w1000" alt="Support Image" />
+    Made for 🇲🇾 by <a href="https://hamradio.my" class="underline">9M2PJU</a><br/>
+    <p>If you want to support this community project, click <span class="clickable" onclick="togglePhoto()">here</span></p>
+    <img id="photo" src="https://drive.google.com/thumbnail?id=1lf1zgIN1Kx5cduZM79n3boGDJQ68uSJ_&sz=w1000" alt="Support Image" />
   </footer>
 
   <script>
+    function togglePhoto() {
+      const img = document.getElementById("photo");
+      img.style.display = img.style.display === "none" ? "block" : "none";
+    }
+
     const output = document.getElementById('output');
     const searchInput = document.getElementById('search');
     let allRows = [];
 
-    function togglePhoto() {
-      const img = document.getElementById('photo');
-      img.classList.toggle('hidden');
-    }
-
-    function bandBadge(freq) {
-      if (freq >= 446 && freq <= 446.2)
+    function bandBadge(freq){
+      if(freq>=446 && freq<=446.2)
         return `<span class="px-2 py-0.5 text-xs bg-green-200 text-green-800 rounded">PMR</span>`;
-      if (freq < 300)
+      if(freq<300)
         return `<span class="px-2 py-0.5 text-xs bg-blue-200 text-blue-800 rounded">VHF</span>`;
       return `<span class="px-2 py-0.5 text-xs bg-purple-200 text-purple-800 rounded">UHF</span>`;
     }
 
-    function createTable(title, rows) {
-      const section = document.createElement('section');
-      section.className = "bg-gray-50 dark:bg-gray-800 rounded-md mb-6 p-4 shadow";
+    function toggle(btn, panel){
+      btn.onclick = () => {
+        panel.classList.toggle('hidden');
+        btn.textContent = panel.classList.contains('hidden') ? '+' : '–';
+      };
+    }
 
-      const header = document.createElement('h2');
-      header.className = "text-xl font-bold mb-3 border-b pb-1";
-      header.textContent = title;
-      section.appendChild(header);
-
+    function createSection(title, rows){
+      const sec = document.createElement('section');
+      sec.className = "bg-gray-50 dark:bg-gray-800 rounded-md mb-6 p-4 shadow";
+      const header = document.createElement('div');
+      header.className = "flex justify-between items-center cursor-pointer";
+      const h = document.createElement('h3');
+      h.className = "text-lg font-semibold";
+      h.textContent = title;
+      const btn = document.createElement('button');
+      btn.textContent = '–'; btn.className='px-2';
+      header.append(h, btn);
       const table = document.createElement('table');
-      table.className = "w-full text-sm";
+      table.className = "w-full text-sm mt-2";
       table.innerHTML = `
         <thead class="border-b">
           <tr class="text-left">
             <th>Name</th><th>Freq</th><th>Band</th><th>Offset</th><th>Tone</th><th>Mode</th><th class="hidden sm:table-cell">Comment</th>
           </tr>
         </thead>
-        <tbody>
-          ${rows.map(r => `
-            <tr class="border-t hover:bg-gray-100 dark:hover:bg-gray-700">
-              <td>${r.Name}</td>
-              <td>${r.Frequency}</td>
-              <td>${bandBadge(parseFloat(r.Frequency) || 0)}</td>
-              <td>${r.Offset}</td>
-              <td>${r.Tone}</td>
-              <td>${r.Mode}</td>
-              <td class="hidden sm:table-cell">${r.Comment}</td>
-            </tr>`).join('')}
-        </tbody>`;
-      section.appendChild(table);
-      return section;
+        <tbody>${rows.map(r=>`
+          <tr class="border-t hover:bg-gray-100 dark:hover:bg-gray-700">
+            <td>${r.Name}</td>
+            <td>${r.Frequency}</td>
+            <td>${bandBadge(parseFloat(r.Frequency)||0)}</td>
+            <td>${r.Offset}</td>
+            <td>${r.Tone}</td>
+            <td>${r.Mode}</td>
+            <td class="hidden sm:table-cell">${r.Comment}</td>
+          </tr>`).join('')}</tbody>`;
+      sec.append(header, table);
+      toggle(btn, table);
+      return sec;
     }
 
-    function render(rows) {
-      output.innerHTML = '';
+    function render(rows){
+      output.querySelectorAll("section").forEach(e => e.remove());
       const groups = { Simplex: [], Repeaters: [], PMR: [] };
-
-      rows.forEach(r => {
-        const freq = parseFloat(r.Frequency) || 0;
-        const offset = parseFloat(r.Offset) || 0;
-        if (r.Location && r.Location.trim().toUpperCase() === "UNKNOWN") return;
-
-        if (freq >= 446 && freq <= 446.2) {
-          groups.PMR.push(r);
-        } else if (offset === 0) {
-          groups.Simplex.push(r);
-        } else {
-          groups.Repeaters.push(r);
+      rows.forEach(r=>{
+        const f = parseFloat(r.Frequency)||0, o = parseFloat(r.Offset)||0;
+        let cat = (o === 0 && !(f >= 446 && f <= 446.2)) ? 'Simplex' : (f >= 446 && f <= 446.2 ? 'PMR' : 'Repeaters');
+        groups[cat].push(r);
+      });
+      ['Simplex','Repeaters','PMR'].forEach(cat=>{
+        if(groups[cat].length){
+          const header = document.createElement('h2');
+          header.className = "text-xl font-bold mt-8 mb-3 border-b pb-1";
+          header.textContent = cat + (cat==='PMR'?' (446 MHz)':'');
+          output.appendChild(header);
+          output.appendChild(createSection(cat + ' Frequencies', groups[cat]));
         }
       });
-
-      output.appendChild(createTable("Simplex", groups.Simplex));
-      output.appendChild(createTable("Repeaters", groups.Repeaters));
-      output.appendChild(createTable("PMR (446 MHz)", groups.PMR));
-
-      if (rows.length === 0) {
-        output.innerHTML = '<p class="text-center">No entries found.</p>';
-      }
+      if(rows.length===0) output.innerHTML='<p class="text-center">No entries found.</p>';
     }
 
-    searchInput.oninput = () => {
+    searchInput.oninput = ()=>{
       const q = searchInput.value.toLowerCase();
-      render(allRows.filter(r => Object.values(r).join(' ').toLowerCase().includes(q)));
+      render(allRows.filter(r=>Object.values(r).join(' ').toLowerCase().includes(q)));
     };
 
-    Papa.parse('9M2PJU.csv', {
-      download: true,
-      header: true,
-      complete: r => {
-        allRows = r.data.filter(x => x.Name || x.Frequency);
-        render(allRows);
-      }
-    });
+    Papa.parse('9M2PJU.csv',{download:true,header:true,complete:r=>{
+      allRows = r.data.filter(x=>x.Name||x.Frequency);
+      render(allRows);
+    }});
   </script>
-
-  <script defer src="https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015" integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ==" data-cf-beacon='{"rayId":"95e7012c1c15d42f","version":"2025.6.2","r":1,"token":"19412d49b9894c10b28c330e60512f51"}' crossorigin="anonymous"></script>
 </body>
 </html>
