@@ -1,209 +1,173 @@
-# 📡 Malaysian Ham Radio Frequencies Collection
+# 📡 Malaysian Ham Radio Frequencies Collection  
 ### *A comprehensive frequency database for Malaysian amateur radio operators and PMR users*
 
 <div align="center">
 
-![Ham Radio](https://img.shields.io/badge/Ham%20Radio-9M2PJU-red?style=for-the-badge&logo=radio&logoColor=white)
-![Malaysia](https://img.shields.io/badge/Malaysia-🇲🇾-blue?style=for-the-badge)
-![CHIRP Compatible](https://img.shields.io/badge/CHIRP-Compatible-green?style=for-the-badge&logo=github&logoColor=white)
+![Ham Radio](https://img.shields.io/badge/Ham%20Radio-9M2PJU-red?style=for-the-badge&logo=radio&logoColor=white)  
+![Malaysia](https://img.shields.io/badge/Malaysia-🇲🇾-blue?style=for-the-badge)  
+![CHIRP Compatible](https://img.shields.io/badge/CHIRP-Compatible-green?style=for-the-badge&logo=github&logoColor=white)  
 ![License](https://img.shields.io/badge/License-WTFPL-brightgreen?style=for-the-badge)
 
 </div>
 
 ---
 
-## 🎯 **Project Overview**
+## 🎯 Project Overview
 
-Welcome to the most comprehensive collection of Malaysian amateur radio frequencies! This repository contains meticulously curated CSV files with simplex frequencies, repeater configurations, and PMR channels specifically designed for radio operators in Malaysia.
-
-### ✨ **Key Features**
-- 🔄 **CHIRP Ready** - Direct import compatibility
-- 📊 **Comprehensive Coverage** - Amateur radio + PMR frequencies
-- 🇲🇾 **Malaysia Focused** - Locally relevant frequency allocations
-- 🎨 **Easy Integration** - One-click radio programming
-- 🔧 **Regularly Updated** - Community-driven maintenance
+A meticulously curated collection of Malaysian amateur radio frequencies—covering simplex, repeaters, and PMR—for seamless programming via CHIRP.
 
 ---
+
 ## 🌐 Live Web Viewer
 
 📡 **Now Available Online!**  
-You can now **browse all Malaysian ham radio frequencies** — simplex, repeaters, and PMR — through a **modern, mobile-friendly** web interface.
+Browse the live web interface at: **[https://frequency.hamradio.my](https://frequency.hamradio.my)**
 
-> **🔗 URL:** [https://frequency.hamradio.my](https://frequency.hamradio.my)
+---
 
-## 🚀 **Quick Start Guide**
+## 🚀 Quick Start Guide
 
-### 📋 **Prerequisites**
-- Compatible radio transceiver
-- Programming cable for your radio model
-- Computer with USB port
-- CHIRP software installed
+### 📋 Prerequisites
+- CHIRP-compatible radio & cable
+- Computer with CHIRP installed
 
-### 🛠️ **Installation Steps**
+### 🛠 Installation
 
-<details>
-<summary><b>🔽 Click to expand step-by-step instructions</b></summary>
+<details><summary><b>🔽 Detailed Steps</b></summary>
 
-#### **Step 1: Download Required Files**
-```bash
-# Clone this repository
-git clone https://github.com/9M2PJU/Malaysian-Ham-Radio-Frequencies.git
+1. Clone or download CSV files:
 
-# Or download the CSV file directly
-```
+   ```bash
+   git clone https://github.com/9M2PJU/Malaysian-Ham-Radio-Frequencies.git
+   ```
 
-#### **Step 2: Install CHIRP Software**
-1. Visit [chirp.danplanet.com](https://chirp.danplanet.com)
-2. Download the latest version for your OS
-3. Install following the official instructions
+2. Install CHIRP from [chirp.danplanet.com](https://chirp.danplanet.com).
 
-#### **Step 3: Connect Your Radio**
-1. 🔌 Connect programming cable to radio and computer
-2. ⚡ Power on your radio
-3. 📱 Ensure proper driver installation
+3. Connect and power on your radio via cable.
 
-#### **Step 4: Program Your Radio**
-1. Open CHIRP software
-2. Navigate to `Radio > Download From Radio`
-3. Select your radio model and port
-4. Create a backup of current settings
-5. Import the CSV file: `File > Import`
-6. Review and adjust frequencies as needed
-7. Upload to radio: `Radio > Upload To Radio`
+4. Use CHIRP to import CSV and then upload frequencies to your device.
 
 </details>
 
 ---
 
-## 📊 **Frequency Coverage**
+## 📊 Frequency Coverage
 
 <div align="center">
 
-| **Band** | **Coverage** | **Channels** | **Type** |
-|----------|--------------|--------------|----------|
-| 🔴 **VHF** | 144-148 MHz | 50+ | Amateur Radio |
-| 🟠 **UHF** | 430-440 MHz | 75+ | Amateur Radio |
-| 🟡 **PMR** | 446 MHz | 16 | Personal Mobile Radio |
-| 🟢 **Repeaters** | Various | 25+ | Linked Systems |
+| **Band**       | **Coverage**   | **Channels** | **Type**           |
+|----------------|----------------|--------------|--------------------|
+| 🔴 **VHF**     | 144–148 MHz    | 50+          | Amateur Radio      |
+| 🟠 **UHF**     | 430–440 MHz    | 75+          | Amateur Radio      |
+| 🟡 **PMR**     | 446 MHz        | 16           | Personal (PMR446)  |
+| 🟢 **Repeaters** | Various       | 25+          | Linked Systems     |
 
 </div>
 
 ---
 
-## 🎨 **Features & Benefits**
+## 🎨 Features & Benefits
 
-<div align="center">
-
-### 🌟 **Why Choose This Collection?**
-
-</div>
-
-| Feature | Description | Benefit |
-|---------|-------------|---------|
-| 🎯 **Accuracy** | Verified frequency allocations | Legal compliance guaranteed |
-| ⚡ **Speed** | One-click programming | Save hours of manual entry |
-| 🔄 **Updates** | Regular frequency updates | Stay current with regulations |
-| 🤝 **Community** | Open-source collaboration | Continuous improvement |
-| 📱 **Compatibility** | Works with most radios | Universal solution |
+| Feature     | Description                           | Benefit                      |
+|-------------|---------------------------------------|------------------------------|
+| 🎯 Accuracy | Verified channel allocations          | Compliance with regulations  |
+| ⚡ Speed    | One-click CHIRP programming           | Saves manual entry time     |
+| 🔄 Updates  | Community-driven CSV maintenance      | Stay current with changes   |
+| 🤝 Open     | Collaborative and open-source         | Welcomes global contributions |
+| 📱 Universal| Compatible across most CHIRP radios   | One file fits many devices  |
 
 ---
 
-## 🛡️ **Supported Radio Models**
+## 🛡️ Supported Radios
 
-<details>
-<summary><b>📻 View Compatible Radios</b></summary>
+<details><summary><b>📻 See Compatible Models</b></summary>
 
-### **Popular Models**
-- Baofeng UV-5R series
-- Yaesu FT-series
-- Icom IC-series
-- Kenwood TH-series
-- Wouxun KG-series
-- And many more CHIRP-compatible radios!
+Including—but not limited to:
+- Baofeng UV‑5R series
+- Yaesu FT series
+- Icom IC series
+- Kenwood TH series
+- Wouxun KG series
 
-*For a complete list, check the [CHIRP compatibility database](https://chirp.danplanet.com/projects/chirp/wiki/Supported_Radios)*
+*Refer to the [CHIRP Supported Radios list](https://chirp.danplanet.com/projects/chirp/wiki/Supported_Radios)*
 
 </details>
 
 ---
 
-## 🤝 **Contributing**
+## 🤝 Contributing
 
-We welcome contributions from the amateur radio community! Here's how you can help:
+We love contributions!
 
-### 🔧 **How to Contribute**
-1. 🍴 Fork this repository
-2. 🌿 Create a feature branch (`git checkout -b feature/new-frequencies`)
-3. ✨ Add your changes
-4. 📝 Commit your changes (`git commit -m 'Add new repeater frequencies'`)
-5. 🚀 Push to the branch (`git push origin feature/new-frequencies`)
-6. 🎯 Open a Pull Request
+### Steps:
+1. 🍴 Fork this repo  
+2. Create a `feature/*` branch  
+3. Make edits & commit  
+4. Push and open a PR  
 
-### 📋 **Contribution Guidelines**
-- Verify frequency accuracy before submitting
-- Include proper documentation for new frequencies
-- Follow the existing CSV format
-- Test with CHIRP before submitting
+### Guidelines:
+- Verify frequency accuracy  
+- Update documentation  
+- Maintain CSV formatting  
+- Test via CHIRP upload  
 
 ---
 
-## 💖 **Support the Project**
+## 💖 Support the Project
 
-If this project has been helpful to you, consider supporting its development:
+If you want to support this community project, **click here**:
+
+<details>
+<summary><b>📸 Show QR Code</b></summary>
 
 <div align="center">
-
-[![PayPal](https://img.shields.io/badge/PayPal-Support%20Development-00457C?style=for-the-badge&logo=paypal&logoColor=white)](https://paypal.me/9m2pju)
-
-**Your support helps maintain and improve this resource for the entire Malaysian ham radio community!**
-
+<a href="https://drive.google.com/file/d/1lf1zgIN1Kx5cduZM79n3boGDJQ68uSJ_/view" target="_blank">
+  <img src="https://drive.google.com/thumbnail?id=1lf1zgIN1Kx5cduZM79n3boGDJQ68uSJ_&sz=w1000" alt="Support Image" width="250">
+</a>
 </div>
 
----
-
-## 📄 **License & Legal**
-
-This project is open source and available under the [WTFPL (Do What The F*ck You Want To Public License)](http://www.wtfpl.net/). 
-
-**TL;DR:** Do whatever you want with this code. No restrictions, no warranties, just pure freedom! 🎉
-
-**⚠️ Important Notice:** Always ensure compliance with local regulations and licensing requirements when operating amateur radio equipment. This frequency list is provided for educational and convenience purposes.
+</details>
 
 ---
 
-## 👥 **Contributors**
+## 🇲🇾 Malaysia National QR Badge
+
+<div align="center">
+<a href="https://hamradio.my"><img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://hamradio.my" alt="Malaysia National QR Code"></a>
+</div>
+
+_Scan to visit the Malaysian ham radio homepage_
+
+---
+
+## 📄 License & Legal
+
+Licensed under the **WTFPL** (Do What The F\*ck You Want Public License).  
+Operate with awareness of local amateur radio regulations—this guide is for educational use.
+
+---
+
+## 👥 Contributors
 
 <div align="center">
 
-### 🌟 **Hall of Fame**
-*Thank you 9M2EDU and to everyone who has contributed to making this project better!*
+### 🌟 Hall of Fame  
+Special thanks to **9M2EDU** and the community!
 
-<!-- Method 1: GitHub Contributors Widget (Auto-updating) -->
 <a href="https://github.com/9M2PJU/Malaysian-Ham-Radio-Simplex-and-Repeater-Frequencies/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=9M2PJU/Malaysian-Ham-Radio-Simplex-and-Repeater-Frequencies" />
+  <img src="https://contrib.rocks/image?repo=9M2PJU/Malaysian-Ham-Radio-Simplex-and-Repeater-Frequencies" alt="Contributors">
 </a>
 
 </div>
 
+---
 
-## 🏆 **Acknowledgments**
+## 📡 73 de 9M2PJU
 
-Special thanks to:
-- 🇲🇾 Malaysian Communications and Multimedia Commission (MCMC)
-- 🤝 The global amateur radio community
-- 💻 CHIRP development team
+Happy programming and clear skies!
 
 ---
 
 <div align="center">
-
-### 📡 **73 de 9M2PJU**
-*Happy Programming & 73!*
-
----
-
-**Made with ❤️ for the Malaysian Ham Radio Community**
-
-[![Visitors](https://visitor-badge.laobi.icu/badge?page_id=9M2PJU.Malaysian-Ham-Radio-Frequencies)](https://github.com/9M2PJU/Malaysian-Ham-Radio-Frequencies)
-
+<img src="https://visitor-badge.laobi.icu/badge?page_id=9M2PJU.Malaysian-Ham-Radio-Frequencies" alt="Visitor Count"/>
 </div>
