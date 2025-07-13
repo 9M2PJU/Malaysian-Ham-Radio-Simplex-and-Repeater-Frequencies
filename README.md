@@ -113,10 +113,10 @@ We love contributions!
 
 ## 💖 Support the Project
 
-If you want to support this community project, **click here**:
+If you want to support this community project:
 
 <details>
-<summary><b>📸 Show QR Code</b></summary>
+<summary><b>📸 Click Here</b></summary>
 
 <div align="center">
 <a href="https://drive.google.com/file/d/1lf1zgIN1Kx5cduZM79n3boGDJQ68uSJ_/view" target="_blank">
