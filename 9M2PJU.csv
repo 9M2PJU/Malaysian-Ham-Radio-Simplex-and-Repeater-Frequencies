@@ -1,5 +1,4 @@
 Location,Name,Frequency,Duplex,Offset,Tone,rToneFreq,cToneFreq,DtcsCode,DtcsPolarity,RxDtcsCode,CrossMode,Mode,TStep,Skip,Power,Comment,URCALL,RPT1CALL,RPT2CALL,DVCODE
-1,V40,145.5,,,,,,,NN,23,Tone->Tone,FM,5,,50W,,,,,
 2,APRS,144.39,,,,,,,NN,23,Tone->Tone,FM,5,,50W,,,,,
 3,KL,145,,0.6,,88.5,88.5,23,NN,23,Tone->Tone,FM,10,,50W,,,,,
 4,9M2RKL,439.6,-,5,Tone,203.5,88.5,23,NN,23,Tone->Tone,FM,5,,50W,"9M2RKL near BUKIT LANJAN, None OPEN",,,,
@@ -169,7 +168,6 @@ Location,Name,Frequency,Duplex,Offset,Tone,rToneFreq,cToneFreq,DtcsCode,DtcsPola
 180,V67,147.525,,,,,,,,,,FM,5,,50W,,,,,
 181,V68,147.555,,,,,,,,,,FM,5,,50W,,,,,
 182,V69,147.585,,,,,,,,,,FM,5,,50W,,,,,
-183,PMR,446.4,,,,,,,,,,FM,5,,50W,,,,,
 184,44600625,446.00625,,,,,,,,,,FM,5,,5.0W,,,,,
 185,44601875,446.01875,,,,,,,,,,FM,5,,5.0W,,,,,
 186,44603125,446.03125,,,,,,,,,,FM,5,,5.0W,,,,,
