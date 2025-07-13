@@ -1,14 +1,12 @@
 # 📡 Malaysian Ham Radio Frequencies Collection  
 ### *A comprehensive frequency database for Malaysian amateur radio operators and PMR users*
 
-<div align="center">
-
-![Ham Radio](https://img.shields.io/badge/Ham%20Radio-9M2PJU-red?style=for-the-badge&logo=radio&logoColor=white)  
-![Malaysia](https://img.shields.io/badge/Malaysia-🇲🇾-blue?style=for-the-badge)  
-![CHIRP Compatible](https://img.shields.io/badge/CHIRP-Compatible-green?style=for-the-badge&logo=github&logoColor=white)  
-![License](https://img.shields.io/badge/License-WTFPL-brightgreen?style=for-the-badge)
-
-</div>
+<p align="center">
+  <img src="https://img.shields.io/badge/Ham%20Radio-9M2PJU-red?style=for-the-badge&logo=radio&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Malaysia-🇲🇾-blue?style=for-the-badge"/>
+  <img src="https://img.shields.io/badge/CHIRP-Compatible-green?style=for-the-badge&logo=github&logoColor=white"/>
+  <img src="https://img.shields.io/badge/License-WTFPL-brightgreen?style=for-the-badge"/>
+</p>
 
 ---
 
@@ -127,16 +125,6 @@ If you want to support this community project, **click here**:
 </div>
 
 </details>
-
----
-
-## 🇲🇾 Malaysia National QR Badge
-
-<div align="center">
-<a href="https://hamradio.my"><img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://hamradio.my" alt="Malaysia National QR Code"></a>
-</div>
-
-_Scan to visit the Malaysian ham radio homepage_
 
 ---
 
