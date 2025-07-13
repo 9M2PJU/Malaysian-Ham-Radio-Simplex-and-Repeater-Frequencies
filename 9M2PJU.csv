@@ -1,6 +1,6 @@
 Location,Name,Frequency,Duplex,Offset,Tone,rToneFreq,cToneFreq,DtcsCode,DtcsPolarity,RxDtcsCode,CrossMode,Mode,TStep,Skip,Power,Comment,URCALL,RPT1CALL,RPT2CALL,DVCODE
-1,V40,145.5,,0.6,,88.5,88.5,23,NN,23,Tone->Tone,FM,5,,50W,,,,,
-2,APRS,144.39,,0.6,,88.5,88.5,23,NN,23,Tone->Tone,FM,5,,50W,,,,,
+1,V40,145.5,,,,,,,NN,23,Tone->Tone,FM,5,,50W,,,,,
+2,APRS,144.39,,,,,,,NN,23,Tone->Tone,FM,5,,50W,,,,,
 3,KL,145,,0.6,,88.5,88.5,23,NN,23,Tone->Tone,FM,10,,50W,,,,,
 4,9M2RKL,439.6,-,5,Tone,203.5,88.5,23,NN,23,Tone->Tone,FM,5,,50W,"9M2RKL near BUKIT LANJAN, None OPEN",,,,
 5,9M2RKL-L1,439.85,-,5,Tone,203.5,88.5,23,NN,23,Tone->Tone,FM,5,,50W,"9M2RKL-L1 near BUKIT LANJAN, None OPEN",,,,
