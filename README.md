@@ -5,7 +5,6 @@
   <img src="https://img.shields.io/badge/Ham%20Radio-9M2PJU-red?style=for-the-badge&logo=radio&logoColor=white"/>
   <img src="https://img.shields.io/badge/Malaysia-🇲🇾-blue?style=for-the-badge"/>
   <img src="https://img.shields.io/badge/CHIRP-Compatible-green?style=for-the-badge&logo=github&logoColor=white"/>
-  <img src="https://img.shields.io/badge/License-WTFPL-brightgreen?style=for-the-badge"/>
 </p>
 
 ---
@@ -130,7 +129,7 @@ If you want to support this community project:
 
 ## 📄 License & Legal
 
-Licensed under the **WTFPL** (Do What The F\*ck You Want Public License).  
+Licensed under the GNU Public Licence 3.0.  
 Operate with awareness of local amateur radio regulations—this guide is for educational use.
 
 ---
