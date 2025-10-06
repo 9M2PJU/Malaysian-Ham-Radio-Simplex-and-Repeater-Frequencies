@@ -31,7 +31,7 @@ Location,Name,Frequency,Duplex,Offset,Tone,rToneFreq,cToneFreq,DtcsCode,DtcsPola
 31,PENANG,145,,0.6,,88.5,88.5,23,NN,23,Tone->Tone,FM,10,,50W,,,,,
 32,9M4RXC,439.475,-,5,TSQL,88.5,88.5,23,NN,23,Tone->Tone,DMR,5,,50W,"9M4RXC near Bandar Baharu, None OPEN",,,,
 33,9M2RBB,147.95,-,0.6,Tone,203.5,88.5,23,NN,23,Tone->Tone,FM,5,,50W,"9M2RBB near BUKIT BENDERA, None OPEN",,,,
-34,9M4RBB,145.7375,-,0.6,Tone,103.5,88.5,23,NN,23,Tone->Tone,FM,12.5,,50W,"9M4RBB near BUKIT BENDERA, None OPEN",,,,
+34,9M4RBB,145.7375,-,0.65,Tone,103.5,88.5,23,NN,23,Tone->Tone,FM,12.5,,50W,"9M4RBB near BUKIT BENDERA, None OPEN",,,,
 35,9M4RPH,147.825,-,0.6,Tone,203.5,88.5,23,NN,23,Tone->Tone,FM,5,,50W,"9M4RPH near BUKIT BENDERA, None OPEN",,,,
 36,9M4RPP,439.525,-,5,Tone,203.5,88.5,23,NN,23,Tone->Tone,FM,5,,50W,"9M4RPP near BUKIT BENDERA, None OPEN",,,,
 37,MLK,145,,0.6,,88.5,88.5,23,NN,23,Tone->Tone,FM,10,,50W,,,,,
